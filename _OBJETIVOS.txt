@@ -1,0 +1,21 @@
+FUNCIONALIDADES PRINCIPAIS DO BACKOFFICE:
+ 
+1. Dashboard Financeiro:
+   - Resumo financeiro com visualização de saldo, receitas, despesas e relatórios analíticos.
+ 
+2. Consulta de Saldo e Transações:
+   - Acesso em tempo real ao saldo e histórico de transações, com funcionalidades de busca e filtros.
+ 
+3. Gestão de Pagamentos e Recebíveis:
+   - Ferramentas para gerenciar pagamentos e recebíveis.
+ 
+4. Relatórios e Análises Financeiras:
+   - Geração de relatórios financeiros detalhados para uma gestão eficaz.
+
+
+
+RECEITAS
+	CRUD
+
+DESPESAS
+	CRUD

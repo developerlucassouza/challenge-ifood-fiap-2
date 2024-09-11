@@ -1,0 +1,37 @@
+.bg-verm-ifood {
+    background-color: #F7001A;
+    color: #F6C000;
+}
+
+.bg-amar-ifood {
+    background-color: #F6C000;
+    color: #F7001A;
+}
+
+.text-verm-ifood {
+    color: #F7001A;
+}
+
+.text-amar-ifood {
+    color: #F6C000;
+}
+
+
+
+
+body {
+    background-color: #F7F7F7;
+}
+
+
+header {
+    background-color: #F7001A;
+    color: #F7F7F7;
+    display: flex;
+    height: 7vh;
+    justify-content: space-around;
+}
+
+header img {
+    height: 7vh;
+}
