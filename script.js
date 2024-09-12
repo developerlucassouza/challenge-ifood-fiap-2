@@ -291,7 +291,13 @@ function excluirDespesa(id) {
 
 
 
-
+function receitasTotais() {
+    let receitas = JSON.parse(localStorage.getItem('receitas'));
+    let receitaTotal = 0;
+    for (receita in receitas) {
+        receitaTotal = receita[]
+    }
+}
 
 
 
