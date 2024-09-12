@@ -181,7 +181,111 @@ function excluirReceita(id) {
 
 
 
+// INSERIR DESPESA
+function inserirDespesa() {
+    // Captura os valores dos campos de input
+    let despesa = document.querySelector('input#despesa').value;
+    let valor = document.querySelector('input#valor').value;
+    let observacoes = document.querySelector('textarea#observacoes').value;
 
+    // Verifica se os campos obrigatórios foram preenchidos
+    if (despesa == '' || valor == '') {
+        $('#modalCreate').modal('hide'); // Fecha o modal
+        modalPreenchaCampos(); // Exibe o modal de erro
+    } else {
+        // Cria a data atual formatada
+        const date = new Date();
+        let data = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+
+        // Cria um array com os dados da nova despesa
+        let novaDespesa = [despesa, valor, observacoes, data];
+
+        // Recupera o array de despesas do localStorage
+        let despesas = JSON.parse(localStorage.getItem('despesas'));
+
+        // Se não houver dados de despesas, inicializa um array vazio
+        if (despesas === 'receitas' || despesas === null) {
+            despesas = [];
+        }
+
+        // Adiciona a nova despesa ao array de despesas
+        despesas.push(novaDespesa);
+
+        // Salva o array de despesas atualizado no localStorage
+        localStorage.setItem('despesas', JSON.stringify(despesas));
+
+        $('#modalCreate').modal('hide');
+        document.querySelector('body').innerHTML += `
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title">Sucesso!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Despesa Inserida com Sucesso!.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+
+        // Exibe o modal
+        $('#modal').modal('show');
+
+        // Remove o modal do DOM após ele ser completamente fechado
+        $('#modal').on('hidden.bs.modal', function () {
+            //$('#modal').remove();  // Remove o modal
+            //$('.modal-backdrop').remove();       // Remove o backdrop, caso fique preso
+            location.reload();
+        });
+    }
+}
+
+// EXCLUIR DESPESA
+function excluirDespesa(id) {
+    // Recupera o array de despesas do localStorage
+    let despesas = JSON.parse(localStorage.getItem('despesas'));
+    despesas.splice(id, 1);
+    localStorage.setItem('despesas', JSON.stringify(despesas));
+
+    document.querySelector('body').innerHTML += `
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title">Sucesso!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Despesa Excluida com Sucesso!.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+
+        // Exibe o modal
+        $('#modal').modal('show');
+
+        // Remove o modal do DOM após ele ser completamente fechado
+        $('#modal').on('hidden.bs.modal', function () {
+            //$('#modal').remove();  // Remove o modal
+            //$('.modal-backdrop').remove();       // Remove o backdrop, caso fique preso
+            location.reload();
+        });
+}
 
 
 
