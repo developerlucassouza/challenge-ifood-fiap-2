@@ -15,6 +15,9 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/ifood.ico" type="image/x-icon">
 </head>
@@ -38,7 +41,57 @@
 
         <main class="container col-md-10">
             <h1><i class="fa-solid fa-chart-line"></i> Dashboard</h1>
-        </main>
+
+            <br>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bloco">
+                        <strong>Receita Total</strong><br>
+                        <span id="total-receitas"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bloco">
+                        <strong>Despesa Total</strong><br>
+                        <span id="total-despesas"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bloco">
+                        <strong>Lucro Total</strong><br>
+                        <span id="total-lucro"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="grafico">
+                        <h2 class="mt-4 text-center">Gráfico de Receitas</h2>
+                        <canvas id="graficoReceitas"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grafico">
+                        <h2 class="mt-4 text-center">Gráfico de Despesas</h2>
+                        <canvas id="graficoDespesas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grafico mt-4">
+                <h2>Gráfico de Receitas, Despesas e Lucro</h2>
+                <canvas id="graficoReceitasDespesas"></canvas>
+            </div>
+
+    </div>
+    </div>
+
+    <br>
+    <br>
+
+    </main>
     </div>
 
     <!-- jQuery/Bootstrap -->

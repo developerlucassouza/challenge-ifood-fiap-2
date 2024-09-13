@@ -96,7 +96,19 @@ main.container {
 
 
 
+.bloco {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #23238E;
+    padding: 5px;
+    text-align: center;
+}
 
+.grafico {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #23238E;
+    padding: 5px;
+    text-align: center;
+}
 
 
 
