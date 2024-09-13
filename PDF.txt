@@ -1,0 +1,15 @@
+Lucas Souza da Silva - RM 557169
+
+Apresentação do Projeto: Backoffice Financeiro para Parceiros do iFood
+
+Este projeto tem como objetivo desenvolver um sistema de backoffice, exclusivamente front-end, voltado para a gestão financeira dos Parceiros do iFood. O sistema oferece uma interface intuitiva e amigável, facilitando o acompanhamento e controle das movimentações financeiras. As principais funcionalidades do sistema incluem:
+
+Dashboard Financeiro: Fornece uma visão geral do saldo, receitas, despesas e relatórios analíticos. Essa ferramenta permite ao usuário monitorar de forma simples e eficaz a situação financeira de sua conta.
+
+Consulta de Saldo e Transações: Oferece acesso em tempo real ao saldo e ao histórico de transações, possibilitando o uso de ferramentas de busca e filtros para facilitar a visualização de dados específicos.
+
+Gestão de Pagamentos e Recebíveis: Permite a administração dos pagamentos realizados e recebíveis pendentes, otimizando o fluxo de caixa e garantindo maior controle financeiro.
+
+Relatórios e Análises Financeiras: Geração de relatórios detalhados, proporcionando análises financeiras precisas que auxiliam na tomada de decisões estratégicas.
+
+Este site foi desenvolvido com foco na facilidade de uso e eficiência, atendendo às principais necessidades dos parceiros do iFood no gerenciamento de suas finanças, sem a necessidade de um backend, garantindo agilidade e praticidade na sua implementação.
