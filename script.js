@@ -355,22 +355,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     function receitasTotais() {
         // Exemplo de receitas [categoria, valor]
-        let receitas = JSON.parse(localStorage.getItem('receitas')) || [
-            ['Vendas', 1000],
-            ['Serviços', 1500],
-            ['Investimentos', 500]
-        ];
+        let receitas = JSON.parse(localStorage.getItem('receitas')) || [];
 
         return receitas;
     }
 
     function despesasTotais() {
         // Exemplo de despesas [categoria, valor]
-        let despesas = JSON.parse(localStorage.getItem('despesas')) || [
-            ['Aluguel', 800],
-            ['Salários', 1200],
-            ['Marketing', 400]
-        ];
+        let despesas = JSON.parse(localStorage.getItem('despesas')) || [];
 
         return despesas;
     }
@@ -423,21 +415,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     function receitasTotais() {
         // Exemplo de receitas [categoria, valor]
-        let receitas = JSON.parse(localStorage.getItem('receitas')) || [
-            ['Vendas', 10],
-            ['Serviços', 30],
-            ['Investimentos', 20]
-        ];
+        let receitas = JSON.parse(localStorage.getItem('receitas')) || [];
 
         return receitas;
     }
 
     function despesasTotais() {
         // Exemplo de despesas [categoria, valor]
-        let despesas = JSON.parse(localStorage.getItem('despesas')) || [
-            ['Aluguel', 2],
-            ['Salários', 15]
-        ];
+        let despesas = JSON.parse(localStorage.getItem('despesas')) || [];
 
         return despesas;
     }
